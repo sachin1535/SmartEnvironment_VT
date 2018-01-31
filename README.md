@@ -1,16 +1,23 @@
 # SmartEnvironment_VT
 Smart Environment Based on Real-time Human Position Tracking for Remote Presence and Collaboration
-Multi-Object Tracking with OpenCV
-This is an code for combined algorithm based background subtraction and neural networks for object detection and tracking. The program is split into different classes for modularity. It is possible to have multiple implementation of object tracking, with a difference-subtracton tracker (almost exactly the one implemented in MATLAB) being the only current implementation.
+# Multi-Object Tracking with OpenCV
+This is code for combined algorithm for object detection and tracking based on background subtraction and neural networks. The program is split into different classes for modularity. It is possible to have multiple implementation of object tracking, with a
+difference-subtracton tracker (almost exactly the one implemented in MATLAB) being the only current implementation.
 
-Building
-You will need OpenCV 3 (not version 2.4.11 or anything previous). It can be downloaded from the OpenCV download page. Linux/Mac users will most likely need to build it from source, unless you can find prebuilt binaries for your system. Once installed, use the CMake gui to build the program, or build from the terminal:
-
+## Building
+You will need OpenCV 3 (not version 2.4.11 or anything previous). It can be downloaded from the
+[OpenCV download page](http://opencv.org/downloads.html). Linux/Mac users will most likely need to build it from
+source, unless you can find prebuilt binaries for your system. Once installed, use the CMake gui to build the
+program, or build from the terminal:
+````
 $ mkdir build        # Create a build directory
 $ cd build
 $ cmake ..           # Use CMake to generate the Makefile
 $ make -j4           # Compiles four files in parallel, best for quad-core computers
-The final binary is mw-tracking and will be placed in the build directory. You can replace the 4 in -j4 with two times the number of CPU cores you have for possibly faster compiling.
+````
+The final binary is `mw-tracking` and will be placed in the `build` directory. You can replace the 4 in `-j4` with
+two times the number of CPU cores you have for possibly faster compiling.
 
-Running
-The syntax for running the program is ./mw-tracking <id> <url>, where <id> is the camera's ID number and <url> is the URL to the camera or to a video file.
+## Running
+The syntax for running the program is `./mw-tracking <id> <url>`, where `<id>` is the camera's ID number and `<url>`
+is the URL to the camera or to a video file.
