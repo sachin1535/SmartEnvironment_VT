@@ -1,6 +1,6 @@
 # SmartEnvironment_VT
 Smart Environment Based on Real-time Human Position Tracking for Remote Presence and Collaboration
-# Multi-Object Tracking with OpenCV
+
 This is code for combined algorithm for object detection and tracking based on background subtraction and neural networks. The program is split into different classes for modularity. It is possible to have multiple implementation of object tracking, with a
 difference-subtracton tracker (almost exactly the one implemented in MATLAB) being the only current implementation.
 
