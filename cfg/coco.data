@@ -1,0 +1,8 @@
+classes= 80
+train  = /home/mw4vision/Desktop/sachin/yolo_cpp-master/data/ImageList_train.txt
+#valid  = coco_testdev
+#valid = data/coco_val_5k.list
+names = data/coco.names
+backup = /home/mw4vision/Desktop/Backup/
+eval=coco
+

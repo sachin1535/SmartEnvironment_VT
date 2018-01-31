@@ -1,0 +1,1 @@
+detections	cameraID	xmin	ymin	xmax	ymax	area	frame_no
